@@ -1,6 +1,9 @@
-# React - Vite Federation Demo
+# React - Vite Federation Issue Demonstration
 
-This example demos consumption of federated modules from a vite bundle. `host` (react based) depends on a component exposed by `remote` app (react based).
+This example shows the problem of using a library,
+that builds on React ([react-image-gallery](https://github.com/xiaolin/react-image-gallery)), in the `remote` app. When running the `host` app, which consumes the `remote` app, 
+you will receive the error `Cannot read properties of null (reading 'useRef')`. But when running the 
+`remote` app directly, this error will not occur.
 
 ## Running
 
